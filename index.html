@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard-customers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
@@ -13,19 +19,63 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <ul>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-    </ul>
+    <div class="container">
+      <!-- navigation -->
+      <nav class="page-navigation">
+        <!-- nav header -->
+        <div class="page-navigation__header">
+          <img
+            src="./images/logo.svg"
+            alt="logo"
+            class="page-navigation__logo"
+          />
+          <div class="page-navigation__wrapper">
+            <h1 class="page-navigation__title">Dashboard</h1>
+            <p class="page-navigation__version">v.01</p>
+          </div>
+        </div>
+        <!-- nav list items -->
+        <ul class="page-navigation__list">
+          <li class="page-navigation__item">
+            <img src="" alt="" />
+            <p class="page-navigation__text">Dashboard</p>
+          </li>
+          <li class="page-navigation__item">
+            <img src="" alt="" />
+            <p class="page-navigation__text">Product</p>
+          </li>
+          <li class="page-navigation__item">
+            <img src="" alt="" />
+            <p class="page-navigation__text">Customers</p>
+          </li>
+          <li class="page-navigation__item">
+            <img src="" alt="" />
+            <p class="page-navigation__text">Income</p>
+          </li>
+          <li class="page-navigation__item">
+            <img src="" alt="" />
+            <p class="page-navigation__text">Promote</p>
+          </li>
+          <li class="page-navigation__item">
+            <img src="" alt="" />
+            <p class="page-navigation__text">Help</p>
+          </li>
+        </ul>
+        <!-- nav footer -->
+        <div class="page-navigation__footer">
+          <img src = "" alt = "useravatar" class="page-navigation__avatar"></img>
+          <div class="page-navigation__user">
+            <p class="page-navigation__name">Evano</p>
+            <p class="page-navigation__position">Project Manager</p>
+          </div>
+        </div>
+      </nav>
+      <!-- board -->
+      <div class="page-board">
+        <div class="page-board__text">Hello Evano 👋🏼,</div>
+        <div class="page-board__data"></div>
+      </div>
+    </div>
     <script src="./js/script.js"></script>
   </body>
 </html>
