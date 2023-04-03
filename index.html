@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
@@ -146,7 +147,145 @@
       <!-- board -->
       <div class="page-board">
         <div class="page-board__text">Hello Evano 👋🏼,</div>
-        <div class="page-board__data"></div>
+        <!-- customers data -->
+        <div class="page-board__customers">
+          <div class="page-board__header">
+            <div class="page-board__titles">
+              <p class="page-board__main-title">All Customers</p>
+              <p class="page-board__active-title">Active Members</p>
+            </div>
+            <div class="page-board__searchField">
+              <img
+                width="16"
+                class="page-board__searchimage"
+                src="./images/search.png"
+              />
+              <input
+                type="text"
+                class="page-board__input"
+                placeholder="Search "
+              />
+            </div>
+          </div>
+          <div class="page-board__table">
+            <div class="page-board__table-head">
+              <div class="page-board__tablecell table__cells-text">
+                Customer Name
+              </div>
+              <div class="page-board__tablecell table__cells-text">Company</div>
+              <div class="page-board__tablecell table__cells-text">
+                Phone Number
+              </div>
+              <div class="page-board__tablecell table__cells-text">Email</div>
+              <div class="page-board__tablecell table__cells-text">Country</div>
+              <div class="page-board__tablecell table__cells-text">Status</div>
+            </div>
+            <div class="page-board__table-row">
+              <div class="page-board__tablecell">Jane Cooper</div>
+              <div class="page-board__tablecell">Microsoft</div>
+              <div class="page-board__tablecell">(225) 555-0118</div>
+              <div class="page-board__tablecell">jane@microsoft.com</div>
+              <div class="page-board__tablecell">United States</div>
+              <div class="page-board__tablecell page-board__tablecell--active">
+                Active
+              </div>
+            </div>
+            <div class="page-board__table-row">
+              <div class="page-board__tablecell">Floyd Miles</div>
+              <div class="page-board__tablecell">Yahoo</div>
+              <div class="page-board__tablecell">(205) 555-0100</div>
+              <div class="page-board__tablecell">floyd@yahoo.com</div>
+              <div class="page-board__tablecell">Kiribati</div>
+              <div
+                class="page-board__tablecell page-board__tablecell--inactive"
+              >
+                Inactive
+              </div>
+            </div>
+            <div class="page-board__table-row">
+              <div class="page-board__tablecell">Ronald Richards</div>
+              <div class="page-board__tablecell">Adobe</div>
+              <div class="page-board__tablecell">(302) 555-0107</div>
+              <div class="page-board__tablecell">ronald@adobe.com</div>
+              <div class="page-board__tablecell">Israel</div>
+              <div
+                class="page-board__tablecell page-board__tablecell--inactive"
+              >
+                Inactive
+              </div>
+            </div>
+            <div class="page-board__table-row">
+              <div class="page-board__tablecell">Marvin McKinney</div>
+              <div class="page-board__tablecell">Tesla</div>
+              <div class="page-board__tablecell">(252) 555-0126</div>
+              <div class="page-board__tablecell">marvin@tesla.com</div>
+              <div class="page-board__tablecell">Iran</div>
+              <div class="page-board__tablecell page-board__tablecell--active">
+                Active
+              </div>
+            </div>
+            <div class="page-board__table-row">
+              <div class="page-board__tablecell">Jerome Bell</div>
+              <div class="page-board__tablecell">Google</div>
+              <div class="page-board__tablecell">(629) 555-0129</div>
+              <div class="page-board__tablecell">jerome@google.com</div>
+              <div class="page-board__tablecell">Réunion</div>
+              <div class="page-board__tablecell page-board__tablecell--active">
+                Active
+              </div>
+            </div>
+            <div class="page-board__table-row">
+              <div class="page-board__tablecell">Kathryn Murphy</div>
+              <div class="page-board__tablecell">Microsoft</div>
+              <div class="page-board__tablecell">(406) 555-0120</div>
+              <div class="page-board__tablecell">kathryn@microsoft.com</div>
+              <div class="page-board__tablecell">Curaçao</div>
+              <div class="page-board__tablecell page-board__tablecell--active">
+                Active
+              </div>
+            </div>
+            <div class="page-board__table-row">
+              <div class="page-board__tablecell">Jacob Jones</div>
+              <div class="page-board__tablecell">Yahoo</div>
+              <div class="page-board__tablecell">(208) 555-0112</div>
+              <div class="page-board__tablecell">jacob@yahoo.com</div>
+              <div class="page-board__tablecell">Brazil</div>
+              <div class="page-board__tablecell page-board__tablecell--active">
+                Active
+              </div>
+            </div>
+            <div class="page-board__table-row">
+              <div class="page-board__tablecell">Kristin Watson</div>
+              <div class="page-board__tablecell">Facebook</div>
+              <div class="page-board__tablecell">(704) 555-0127</div>
+              <div class="page-board__tablecell">kristin@facebook.com</div>
+              <div class="page-board__tablecell">Åland Islands</div>
+              <div
+                class="page-board__tablecell page-board__tablecell--inactive"
+              >
+                Inactive
+              </div>
+            </div>
+          </div>
+          <!-- paginator -->
+          <div class="page-board__footer">
+            <div class="page-board__info">
+              Showing data 1 to 8 of 256K entries
+            </div>
+            <div class="page-board__paginator">
+              <ul class="page-board__list">
+                <li class="page-board__item previous"><</li>
+                <li class="page-board__item active-page">1</li>
+                <li class="page-board__item">2</li>
+                <li class="page-board__item">3</li>
+                <li class="page-board__item">4</li>
+                <li class="page-board__item">...</li>
+                <li class="page-board__item">40</li>
+                <li class="page-board__item next">></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="./js/script.js"></script>
