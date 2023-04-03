@@ -5,6 +5,8 @@
   --background-color: #ffffff;
   --light-text-color: #ffffff;
   --title-text-color: #000000;
+  --userposition-text-color: #757575;
+  --navitem-text-color: #9197b3;
   --active-title-color: #16c098;
   --active-button-textcolor: #008767;
   --active-button-bgcolor: rgba(22, 192, 152, 0.38);
@@ -53,6 +55,11 @@ li {
   list-style: none;
 }
 
+.isActive {
+  background-color: var(--active-item-bgcolor);
+  color: var(--active-item-textcolor);
+}
+
 .container {
   width: 1440px;
   margin: 0 auto;
@@ -93,12 +100,78 @@ li {
   font-weight: 500;
   color: var(--version-color);
 }
+.page-navigation__list {
+  flex-grow: 1;
+  padding-left: 0px;
+}
+.page-navigation__link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.page-navigation__item {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 46px;
+  margin-bottom: 29px;
+  border-radius: 8px;
+  padding: 11px 8px 11px 11px;
+}
+.page-navigation__item:hover, .page-navigation__item:focus {
+  background-color: var(--active-item-bgcolor);
+  opacity: 0.9;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.page-navigation__spanwrap {
+  display: flex;
+  flex-grow: 1;
+}
+.page-navigation__icon {
+  margin-right: 14px;
+  fill: var(--navitem-text-color);
+}
+.page-navigation__text {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--navitem-text-color);
+}
 .page-navigation__footer {
   display: flex;
   align-items: center;
+  height: 42px;
 }
 .page-navigation__avatar {
   margin-right: 12px;
+}
+.page-navigation__name {
+  font-size: 14px;
+  font-weight: 500;
+}
+.page-navigation__position {
+  font-size: 12px;
+  color: var(--userposition-text-color);
+}
+
+.page-navigation__icon--right {
+  margin-right: 0;
+}
+
+.page-navigation__item:hover .page-navigation__text,
+.page-navigation__item:hover .page-navigation__text {
+  color: var(--active-item-textcolor);
+  transition: 0.3s linear;
+}
+
+.page-navigation__item:hover .page-navigation__icon,
+.page-navigation__item:hover .page-navigation__icon {
+  fill: white;
+  transition: 0.3s linear;
+}
+
+.isActiveText {
+  color: var(--active-item-textcolor);
 }
 
 .page-board {
