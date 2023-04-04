@@ -1,3 +1,5 @@
+@import './../node_modules/modern-normalize/modern-normalize.css';
+
 :root {
   --primary-text-color: #292d32;
   --secondary-text-color: #b5b7c0;
@@ -24,7 +26,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
@@ -190,23 +192,23 @@ li {
   width: 24px;
 }
 
-.nav-container input[type=checkbox]:checked ~ .menu-items {
+.nav-container input[type='checkbox']:checked ~ .menu-items {
   transform: translateX(0);
 }
 
-.nav-container input[type=checkbox]:checked ~ .hamburger-lines .line1 {
+.nav-container input[type='checkbox']:checked ~ .hamburger-lines .line1 {
   transform: rotate(45deg);
 }
 
-.nav-container input[type=checkbox]:checked ~ .hamburger-lines .line2 {
+.nav-container input[type='checkbox']:checked ~ .hamburger-lines .line2 {
   transform: scaleY(0);
 }
 
-.nav-container input[type=checkbox]:checked ~ .hamburger-lines .line3 {
+.nav-container input[type='checkbox']:checked ~ .hamburger-lines .line3 {
   transform: rotate(-45deg);
 }
 
-.nav-container input[type=checkbox]:checked ~ .logo {
+.nav-container input[type='checkbox']:checked ~ .logo {
   display: none;
 }
 
@@ -430,7 +432,8 @@ li {
     border-radius: 8px;
     padding: 11px 8px 11px 11px;
   }
-  .page-navigation__item:hover, .page-navigation__item:focus {
+  .page-navigation__item:hover,
+  .page-navigation__item:focus {
     background-color: var(--active-item-bgcolor);
     opacity: 0.9;
     transition: 0.3s linear;
@@ -649,4 +652,4 @@ li {
 }
 .isHidden {
   display: none;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
