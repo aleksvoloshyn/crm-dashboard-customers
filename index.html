@@ -26,7 +26,7 @@
         <nav>
           <div class="navbar">
             <div class="container nav-container">
-              <input class="checkbox" type="checkbox" name="" id="" />
+              <input class="checkbox" type="checkbox" />
               <div class="hamburger-lines">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
@@ -41,7 +41,7 @@
                 <h1>Dashboard</h1>
                 <p class="page-navigation__version">v.01</p>
               </div>
-              <div class="menu-items">
+              <ul class="menu-items">
                 <li>
                   <a class="page-navigation__mobilelink" href="#">Dashboard</a>
                 </li>
@@ -57,7 +57,7 @@
                 <li>
                   <a class="page-navigation__mobilelink" href="#">Help</a>
                 </li>
-              </div>
+              </ul>
             </div>
           </div>
         </nav>
@@ -89,12 +89,12 @@
           </li>
           <li class="page-navigation__item">
             <a href="#product" class="page-navigation__link">
-              <span class="page-navigation__spanwrap">
+              <div class="page-navigation__spanwrap">
                 <svg class="page-navigation__icon" width="24" height="24">
                   <use href="./images/svg/sprite.svg#product"></use>
                 </svg>
-                <p class="page-navigation__text">Product</p></span
-              >
+                <p class="page-navigation__text">Product</p>
+              </div>
 
               <svg
                 class="page-navigation__icon page-navigation__icon--right"
@@ -107,14 +107,12 @@
           </li>
           <li class="page-navigation__item isActive">
             <a href="#customers" class="page-navigation__link">
-              <span class="page-navigation__spanwrap">
+              <div class="page-navigation__spanwrap">
                 <svg class="page-navigation__icon" width="24" height="24">
                   <use href="./images/svg/sprite.svg#customers"></use>
                 </svg>
-                <p class="page-navigation__text isActiveText">
-                  Customers
-                </p></span
-              >
+                <p class="page-navigation__text isActiveText">Customers</p>
+              </div>
               <svg
                 class="page-navigation__icon page-navigation__icon--right"
                 width="16"
@@ -125,12 +123,12 @@
           </li>
           <li class="page-navigation__item">
             <a href="#income" class="page-navigation__link">
-              <span class="page-navigation__spanwrap"
-                ><svg class="page-navigation__icon" width="24" height="24">
+              <div class="page-navigation__spanwrap">
+                <svg class="page-navigation__icon" width="24" height="24">
                   <use href="./images/svg/sprite.svg#income"></use>
                 </svg>
-                <p class="page-navigation__text">Income</p></span
-              >
+                <p class="page-navigation__text">Income</p>
+              </div>
               <svg
                 class="page-navigation__icon page-navigation__icon--right"
                 width="16"
@@ -141,12 +139,12 @@
           </li>
           <li class="page-navigation__item">
             <a href="#promote" class="page-navigation__link">
-              <span class="page-navigation__spanwrap">
+              <div class="page-navigation__spanwrap">
                 <svg class="page-navigation__icon" width="24" height="24">
                   <use href="./images/svg/sprite.svg#promote"></use>
                 </svg>
-                <p class="page-navigation__text">Promote</p></span
-              >
+                <p class="page-navigation__text">Promote</p>
+              </div>
               <svg
                 class="page-navigation__icon page-navigation__icon--right"
                 width="16"
@@ -157,12 +155,12 @@
           </li>
           <li class="page-navigation__item">
             <a href="#help" class="page-navigation__link">
-              <span class="page-navigation__spanwrap">
+              <div class="page-navigation__spanwrap">
                 <svg class="page-navigation__icon" width="24" height="24">
                   <use href="./images/svg/sprite.svg#help"></use>
                 </svg>
-                <p class="page-navigation__text">Help</p></span
-              >
+                <p class="page-navigation__text">Help</p>
+              </div>
               <svg
                 class="page-navigation__icon page-navigation__icon--right"
                 width="16"
@@ -201,6 +199,7 @@
                 width="16"
                 class="page-board__searchimage"
                 src="./images/search.png"
+                alt="search"
               />
               <input
                 type="text"
@@ -316,14 +315,14 @@
             </div>
             <div class="page-board__paginator">
               <ul class="page-board__list">
-                <li class="page-board__item previous"><</li>
+                <li class="page-board__item previous">&lt;</li>
                 <li class="page-board__item active-page">1</li>
                 <li class="page-board__item">2</li>
                 <li class="page-board__item">3</li>
                 <li class="page-board__item">4</li>
                 <li class="page-board__dots">...</li>
                 <li class="page-board__item">40</li>
-                <li class="page-board__item next">></li>
+                <li class="page-board__item next">&gt;</li>
               </ul>
             </div>
           </div>

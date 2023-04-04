@@ -63,6 +63,8 @@ li {
 .container {
   min-width: 360px;
 }
+
+// mobile navigation styles
 .navbar {
   width: 100%;
   box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
@@ -156,7 +158,7 @@ li {
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
-
+  margin-top: 0;
   transition: transform 0.5s ease-in-out;
   text-align: center;
   background-color: var(--background-color);
