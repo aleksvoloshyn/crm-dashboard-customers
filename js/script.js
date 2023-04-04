@@ -15,7 +15,9 @@ function menuItemsHandler() {
 }
 
 function activeCustomersHandler() {
-  inActive.forEach((i) => i.parentNode.classList.add('isHidden'))
+  inActive.forEach((i) => {
+    i.parentNode.classList.add('isHidden')
+  })
 }
 function allCustomersHandler() {
   inActive.forEach((i) => i.parentNode.classList.remove('isHidden'))
